@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@900&display=swap');
+
+*, *:after,*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Merriweather', serif;
+  
+  --color-primary: #4F4F4F;
+  --color-secondary: #F2F2F2;
+}
+
+body {
+  background-color: var(--color-secondary);
+}
+
+header, main {
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: var(--font-primary);
+}
+
+h2 {
+  font-family: var(--font-primary);
+}
+
+p {
+  font-family: var(--font-secondary);
+}
+
+/* Nav bar */
+header {
+  
+}
+
+.navbar--list {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  padding: 1.5rem;
+}
+
+.navbar--item {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.navbar--link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.section:hover {
+
+}
+
+
+.name-contact, .section h2 {
+  margin-bottom: 10px;
+}
+
+/* Welcome section */
+.name-contact {
+  display:flex;
+  align-items: center;
+}
+
+.contact {
+  margin-left: 15px;
+}
+
+.contact > a {
+  color: black;
+}
+
+.contact > a:hover {
+  color: var(--color-primary);
+}
+
+.list-about, .list-education {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+}
+
+/* Work section */
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.experience--img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 15px;
+}
+
+.experience--img img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.experience--details {
+  font-family: var(--font-secondary);
+}
