@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;900&display=swap');
 
 *, *:after,*:before {
   margin: 0;
@@ -14,44 +14,60 @@
   --color-secondary: #F2F2F2;
 }
 
-body {
-  background-color: var(--color-secondary);
+/* Body */
+.body {
+  background-color: white;
+  display:flex;
+  align-items: flex-start;
 }
 
-header, main {
-  width: 50%;
-  margin: auto;
-}
-
-h1 {
-  font-size: 28px;
+h1, h2 {
   font-family: var(--font-primary);
 }
 
-h2 {
-  font-family: var(--font-primary);
-}
-
-p {
+h3, h4, h5, p {
   font-family: var(--font-secondary);
 }
 
 /* Nav bar */
-header {
-  
+.header {
+  width: 30%;
 }
 
 .navbar--list {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 2rem;
-  padding: 1.5rem;
+  flex-direction: column;  
+  margin: 5rem 5rem 0 5rem;
+}
+
+.navbar--title, .navbar--item {
+  font-family: var(--font-primary);
+  list-style-type: none;
+}
+
+.navbar--title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.navbar--contact {
+  display:flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar--contact > a {
+  color: black;
+  padding: 1.5rem 0.5rem 1.5rem 0;
+}
+
+.navbar--contact > a:hover {
+  color: var(--color-primary);
 }
 
 .navbar--item {
-  font-family: var(--font-secondary);
-  list-style-type: none;
-  margin-left: 10px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 
 .navbar--link {
@@ -59,9 +75,13 @@ header {
   text-decoration: none;
 }
 
+.navbar--link:hover {
+  box-shadow: 0 5px 0 var(--color-secondary);
+}
+
 /* Sections */
 .section {
-  background-color: white;
+  background-color: var(--color-secondary);
   padding: 30px;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -76,6 +96,10 @@ header {
   margin-bottom: 10px;
 }
 
+.content {
+  width: 60%;
+}
+
 /* Welcome section */
 .name-contact {
   display:flex;
@@ -86,13 +110,7 @@ header {
   margin-left: 15px;
 }
 
-.contact > a {
-  color: black;
-}
 
-.contact > a:hover {
-  color: var(--color-primary);
-}
 
 .list-about, .list-education {
   font-family: var(--font-secondary);
