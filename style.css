@@ -14,6 +14,10 @@
   --color-secondary: #F2F2F2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 .body {
   background-color: white;
