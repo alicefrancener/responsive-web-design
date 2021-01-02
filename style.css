@@ -93,45 +93,30 @@ h3, h4, h5, p {
 
 /* Content */
 .content {
-  width: 50%;
+  width: 60%;
   margin-left: 280px;
   margin-top: 5rem;
 }
 
-
 /* Sections */
 .section {
+  height: 100vh;
+}
+
+.section--box {
   background-color: var(--color-secondary);
-  padding: 30px;
+  padding: 50px;
   margin-bottom: 30px;
   border-radius: 10px;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
-.section:hover {
-
+.section h1, h2 {
+  margin-bottom: 20px;
 }
 
-
-.name-contact, .section h2 {
-  margin-bottom: 10px;
-}
-
-.content {
-  width: 60%;
-}
-
-/* Welcome section */
-.name-contact {
-  display:flex;
-  align-items: center;
-}
-
-.contact {
-  margin-left: 15px;
-}
-
-
-
+/* Section About */
 .list-about, .list-education {
   font-family: var(--font-secondary);
   list-style-type: none;
