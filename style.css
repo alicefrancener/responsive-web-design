@@ -17,8 +17,6 @@
 /* Body */
 .body {
   background-color: white;
-  display:flex;
-  align-items: flex-start;
 }
 
 h1, h2 {
@@ -30,8 +28,10 @@ h3, h4, h5, p {
 }
 
 /* Nav bar */
-.header {
-  width: 30%;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar--list {
@@ -78,6 +78,7 @@ h3, h4, h5, p {
 .navbar--link:hover {
   box-shadow: 0 5px 0 var(--color-secondary);
 }
+
 
 /* Sections */
 .section {
