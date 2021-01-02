@@ -83,6 +83,7 @@ h3, h4, h5, p {
 .navbar--link {
   color: var(--color-primary);
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .navbar--link:hover {
