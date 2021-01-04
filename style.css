@@ -116,6 +116,11 @@ h3, h4, h5, p {
   margin-bottom: 20px;
 }
 
+.section__box ul {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .section__box::-webkit-scrollbar {
   display: none;
@@ -128,13 +133,8 @@ h3, h4, h5, p {
 }
 
 /* Section About */
- .section__box--about p{
+ .section__box--about p {
   margin-top: 15px;
-}
-
-.list-about, .list-education {
-  font-family: var(--font-secondary);
-  list-style-type: none;
 }
 
 /* Work section */
