@@ -137,6 +137,40 @@ h3, h4, h5, p {
   margin-top: 15px;
 }
 
+/* Section Projects */
+
+.section__box--projects .section__content {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1%;
+  padding: 1rem;
+  width: 320px;
+}
+
+.card__img img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card hr {
+  border: 0.5px solid var(--color-secondary);
+}
+
+.card__title {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
 /* Work section */
 
 .experience {
