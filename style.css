@@ -99,17 +99,11 @@ h3, h4, h5, p {
 }
 
 /* Sections */
-.section {
-  height: 100vh;
-}
-
 .section__box {
   background-color: var(--color-secondary);
   padding: 50px;
   margin-bottom: 30px;
   border-radius: 10px;
-  height: 80vh;
-  overflow-y: scroll;
 }
 
 .section h1, h2 {
@@ -133,8 +127,19 @@ h3, h4, h5, p {
 }
 
 /* Section About */
+#welcome-section {
+  height: 100vh;
+}
+
  .section__box--about p {
   margin-top: 15px;
+}
+
+.main__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 /* Section Projects */
@@ -142,7 +147,6 @@ h3, h4, h5, p {
 .section__box--projects .section__content {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .card {
