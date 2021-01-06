@@ -177,33 +177,38 @@ h3, h4, h5, p {
 
 /* Section experience */
 
-.section__box--experience .section__content {
+.section__box--experience .section__content, .section__box--education .section__content {
   display: flex;
   
   align-items: center;
   margin-top: 25px;
 }
 
-.experience--img {
+.experience--img, .education--img {
   max-width: 100%;
   height: auto;
   margin-right: 15px;
 }
 
-.experience--img img {
+.education--twoimg {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience--img img, .education--img img {
   width: 80px;
   border-radius: 5px;
 }
 
-.experience--details {
+.experience--details, .education--details {
   font-family: var(--font-secondary);
 }
 
-.experience--title {
+.experience--title, .education--title {
   font-size: 16px;
 }
 
-.experience--time {
+.experience--time, .education--time {
   font-size: 14px;
   color:var(--color-primary);
   margin: 8px 0 8px 0;
