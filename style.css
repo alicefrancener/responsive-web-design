@@ -142,6 +142,12 @@ h3, h4, h5, p {
   margin-bottom: 50px;
 }
 
+/* Section Experience */
+
+#experience {
+  margin-top: 5em;
+}
+
 /* Section Projects */
 
 .section__box--projects .section__content {
