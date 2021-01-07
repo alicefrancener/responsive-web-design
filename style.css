@@ -175,7 +175,7 @@ h3, h4, h5, p {
   font-weight: 900;
 }
 
-/* Section experience */
+/* Section: experience and education */
 
 .section__box--experience .section__content, .section__box--education .section__content {
   display: flex;
