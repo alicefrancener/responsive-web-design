@@ -7,7 +7,40 @@
 
   </head>
   <body>
+    <header>
+      <h1 id="title">Form</h1>
+      <p id="description">At tellus at urna condimentum</p>
+    </header>
+    
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
 
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+
+      <label id="number-label" for="number">How many years since you first start programming?</label>
+      <input id="number" type="number" min="0" max="80" placeholder="Enter years since started programming" required>
+
+      <label for="area">Prefered area</label>
+      <select id="dropdown" name="area">
+        <option value="front-end">Front end</option>
+        <option value="back-end">Back end</option>
+        <option value="full-stack">Full stack</option>
+        <option value="devops">DevOps</option>
+        <option value="sysadmin">SysAdmin</option>
+        <option value="qa">QA</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- radio group:  -->
+
+      <!-- checkbox: resources used to learn-->
+
+      <!-- text area: advice -->
+
+      <button type="submit">Submit</button>
+    </form>
 
   </body>
 </html>
