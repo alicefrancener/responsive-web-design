@@ -15,56 +15,71 @@
       </header>
       
       <form id="survey-form">
-        <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-  
-        <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
-  
-        <label id="number-label" for="number">Age</label>
-        <input id="number" type="number" min="0" max="100" placeholder="Enter your age" required>
-  
-        <label for="area">Prefered area</label>
-        <select id="dropdown" name="area">
-          <option value="front-end">Front end</option>
-          <option value="back-end">Back end</option>
-          <option value="full-stack">Full stack</option>
-          <option value="devops">DevOps</option>
-          <option value="sysadmin">SysAdmin</option>
-          <option value="qa">QA</option>
-          <option value="other">Other</option>
-        </select>
-  
-        <!-- radio group: How many years since you first start programming? -->
-        <input type="radio">
-        <label>1 year</label>
-  
-        <input type="radio">
-        <label>2 years</label>
+        <div class="field">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
         
-        <input type="radio">
-        <label>Between 2 years and 5 years</label>
+        <div class="field">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required>  
+        </div>
         
-        <input type="radio">
-        <label>More than 5 years</label>
+        <div class="field">
+          <label id="number-label" for="number">Age</label>
+          <input id="number" type="number" min="0" max="100" placeholder="Enter your age" required>  
+        </div>
+        
+        <!-- dropdown/select -->
+        <div class="field">
+          <label for="area">Prefered area</label>
+          <select id="dropdown" name="area">
+            <option value="front-end">Front end</option>
+            <option value="back-end">Back end</option>
+            <option value="full-stack">Full stack</option>
+            <option value="devops">DevOps</option>
+            <option value="sysadmin">SysAdmin</option>
+            <option value="qa">QA</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- radio group -->
+        <fieldset>
+          <legend>How many years since you first start programming?</legend>
+          <input type="radio">
+          <label>1 year</label>
+    
+          <input type="radio">
+          <label>2 years</label>
+          
+          <input type="radio">
+          <label>Between 2 years and 5 years</label>
+          
+          <input type="radio">
+          <label>More than 5 years</label>
+        </fieldset>
   
-  
-        <!-- checkbox: resources used to learn-->
-        <input type="checkbox">
-        <label>YouTube</label>
-  
-        <input type="checkbox">
-        <label>Learning plataforms</label>
-  
-        <input type="checkbox">
-        <label>Books</label>
-  
-        <!-- text area: advice -->
-        <label>Advice</label>
-        <textarea rows="3">
-  
-        </textarea>
-  
+        <!-- checkbox -->
+        <fieldset>
+          <legend>Which resources do you use to learn?</legend>
+          <input type="checkbox">
+          <label>YouTube</label>
+    
+          <input type="checkbox">
+          <label>Learning plataforms</label>
+    
+          <input type="checkbox">
+          <label>Books</label>
+        </fieldset>
+
+        <!-- text area -->
+        <div class="field">
+          <label>Advice</label>
+          <textarea rows="3">
+          </textarea>
+        </div>
+
         <button type="submit">Submit</button>
       </form>
     </div>
