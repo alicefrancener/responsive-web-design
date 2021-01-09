@@ -6,3 +6,20 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+html, body {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #a445b2, #fa4299);
+}
+
+/* Form */
+
+.wrapper {
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  background: white;
+}
