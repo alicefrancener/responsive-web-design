@@ -23,3 +23,23 @@ html, body {
   border-radius: 10px;
   background: white;
 }
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field input, select{
+  padding: 10px;
+  margin: 4px 0;
+}
+
+label, fieldset, textarea {
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+}
