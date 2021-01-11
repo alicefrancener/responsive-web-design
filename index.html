@@ -35,20 +35,20 @@
       <fieldset class="fieldset">
         <legend>How many years since you first start programming?</legend>
         <div>
-          <input type="radio">
-          <label>1 year</label>
+          <input id="one" type="radio" name="years" value="one">
+          <label for="one">1 year</label>
         </div>
         <div>
-          <input type="radio">
-          <label>2 years</label>
+          <input id="two" type="radio" name="years" value="two">
+          <label for="two">2 years</label>
         </div>
         <div>
-          <input type="radio">
-          <label>Between 2 years and 5 years</label>
+          <input id="two-to-five" type="radio" name="years" value="two-to-five">
+          <label for="two-to-five">Between 2 years and 5 years</label>
         </div>
         <div>
-          <input type="radio">
-          <label>More than 5 years</label>
+          <input id="more-than-five" type="radio" name="years" value="more-than-five">
+          <label for="more-than-five">More than 5 years</label>
         </div>
       </fieldset>
 
@@ -56,26 +56,26 @@
       <fieldset class="fieldset">
         <legend>Which resources do you use to learn?</legend>
         <div>
-          <input type="checkbox">
-          <label>YouTube</label>
+          <input id="videos" type="checkbox" value="videos">
+          <label for="videos">Tutorial videos</label>
         </div>
         <div>
-          <input type="checkbox">
-          <label>Learning plataforms</label>
+          <input id="plataforms" type="checkbox" value="plataforms">
+          <label for="plataforms">Learning plataforms</label>
         </div>
         <div>
-          <input type="checkbox">
-          <label>Books</label>
+          <input id="books" type="checkbox" value="books">
+          <label for="books">Books</label>
         </div>
         <div>
-          <input type="checkbox">
-          <label>Projects</label>
+          <input id="projects" type="checkbox" value="projects">
+          <label for="projects">Projects</label>
         </div>
       </fieldset>
 
       <!-- dropdown/select -->
       <div class="field">
-        <label for="area">In which area do you work or want to work on?</label>
+        <label for="dropdown">In which area do you work or want to work on?</label>
         <select id="dropdown" name="area">
           <option value="front-end">Front end</option>
           <option value="back-end">Back end</option>
@@ -89,12 +89,12 @@
 
       <!-- text area -->
       <div class="field">
-        <label>Which is the best advice you could give to someone who is starting to learn programming?</label>
-        <textarea rows="3">
+        <label for="advice">Which is the best advice you could give to someone who is starting to learn programming?</label>
+        <textarea id="advice" rows="3">
           </textarea>
       </div>
 
-      <button class="btn" type="submit">Submit</button>
+      <button id="submit" class="btn" type="submit">Submit</button>
     </form>
   </div>
 </body>
