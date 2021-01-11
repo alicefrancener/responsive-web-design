@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link  rel="stylesheet" href="style.css">
-  </head>
-  
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 id="title">Form</h1>
-        <p id="description">At tellus at urna condimentum</p>
-      </header>
-      
-      <form id="survey-form">
-        <div class="field">
-          <label id="name-label" for="name">Name</label>
-          <input id="name" type="text" placeholder="Enter your name" required>
-        </div>
-        
-        <div class="field">
-          <label id="email-label" for="email">Email</label>
-          <input id="email" type="email" placeholder="Enter your email" required>  
-        </div>
-        
-        <div class="field">
-          <label id="number-label" for="number">Age</label>
-          <input id="number" type="number" min="0" max="100" placeholder="Enter your age" required>  
-        </div>
-        
-        <!-- dropdown/select -->
-        <div class="field">
-          <label for="area">Prefered area</label>
-          <select id="dropdown" name="area">
-            <option value="front-end">Front end</option>
-            <option value="back-end">Back end</option>
-            <option value="full-stack">Full stack</option>
-            <option value="devops">DevOps</option>
-            <option value="sysadmin">SysAdmin</option>
-            <option value="qa">QA</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
 
-        <!-- radio group -->
-        <fieldset>
-          <legend>How many years since you first start programming?</legend>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 id="title">Form</h1>
+      <p id="description">At tellus at urna condimentum</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="field">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="field">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="field">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="0" max="100" placeholder="Enter your age" required>
+      </div>
+
+      <!-- dropdown/select -->
+      <div class="field">
+        <label for="area">Prefered area</label>
+        <select id="dropdown" name="area">
+          <option value="front-end">Front end</option>
+          <option value="back-end">Back end</option>
+          <option value="full-stack">Full stack</option>
+          <option value="devops">DevOps</option>
+          <option value="sysadmin">SysAdmin</option>
+          <option value="qa">QA</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- radio group -->
+      <fieldset>
+        <legend>How many years since you first start programming?</legend>
+        <div>
           <input type="radio">
           <label>1 year</label>
-    
+        </div>
+        <div>
           <input type="radio">
           <label>2 years</label>
-          
+        </div>
+        <div>
           <input type="radio">
           <label>Between 2 years and 5 years</label>
-          
+        </div>
+        <div>
           <input type="radio">
           <label>More than 5 years</label>
-        </fieldset>
-  
-        <!-- checkbox -->
-        <fieldset>
-          <legend>Which resources do you use to learn?</legend>
+        </div>
+      </fieldset>
+
+      <!-- checkbox -->
+      <fieldset>
+        <legend>Which resources do you use to learn?</legend>
+        <div>
           <input type="checkbox">
           <label>YouTube</label>
-    
+        </div>
+        <div>
           <input type="checkbox">
           <label>Learning plataforms</label>
-    
+        </div>
+        <div>
           <input type="checkbox">
           <label>Books</label>
-        </fieldset>
-
-        <!-- text area -->
-        <div class="field">
-          <label>Advice</label>
-          <textarea rows="3">
-          </textarea>
         </div>
+        <div>
+          <input type="checkbox">
+          <label>Projects</label>
+        </div>
+      </fieldset>
 
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </body>
+      <!-- text area -->
+      <div class="field">
+        <label>Which is the best advice you could give to someone who is starting to learn programming?</label>
+        <textarea rows="3">
+          </textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
 </html>
