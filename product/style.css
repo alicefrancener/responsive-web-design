@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Pacifico&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: 'Pacifico', sans-serif;
+  --font-secondary: 'Fraunces', serif;
+
+  --color-primary: #DE3A3C;
+  --color-secondary: #5E191A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
