@@ -11,9 +11,63 @@
   --font-secondary: 'Fraunces', serif;
 
   --color-primary: #DE3A3C;
-  --color-secondary: #5E191A;
+  --color-secondary: #C43335;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h1, h2 {
+  font-family: var(--font-primary);
+}
+
+li, p {
+  font-family: var(--font-secondary);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  position: fixed;
+}
+
+.header-title {
+  display: flex;
+  color: var(--color-primary);
+}
+
+.header-img {
+  margin-left: 8px;
+  align-self: flex-start;
+}
+
+.nav-bar {
+  align-self: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  padding: 0 5px;;
+}
+
+.nav-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-secondary);
+  box-shadow: 0 5px 0 var(--color-secondary);
 }
