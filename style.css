@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;900&display=swap');
+
+*, *:after,*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Merriweather', serif;
+  
+  --color-primary: #4F4F4F;
+  --color-secondary: #F2F2F2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+.body {
+  background-color: white;
+}
+
+h1, h2 {
+  font-family: var(--font-primary);
+}
+
+h3, h4, h5, p {
+  font-family: var(--font-secondary);
+}
+
+/* Nav bar */
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.navbar--list {
+  display: flex;
+  flex-direction: column;  
+  margin: 5rem 5rem 0 5rem;
+}
+
+.navbar--title, .navbar--item {
+  font-family: var(--font-primary);
+  list-style-type: none;
+}
+
+.navbar--title > a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.navbar--title > a:hover {
+  color: var(--color-primary);
+  box-shadow: 0 5px 0 var(--color-secondary);
+}
+
+.navbar--contact {
+  display:flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar--contact > a {
+  color: black;
+  padding: 1.5rem 0.5rem 1.5rem 0;
+}
+
+.navbar--contact > a:hover {
+  color: var(--color-primary);
+}
+
+.navbar--item {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.navbar--link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.navbar--link:hover {
+  font-weight: 900;
+  box-shadow: 0 5px 0 var(--color-secondary);
+}
+
+/* Content */
+.content {
+  width: 60%;
+  margin-left: 280px;
+  margin-top: 5rem;
+}
+
+/* Sections */
+.section__box {
+  background-color: var(--color-secondary);
+  padding: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.section h1, h2 {
+  margin-bottom: 20px;
+}
+
+.section__box ul {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.section__box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.section__box {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Section About */
+#welcome-section {
+  height: 100vh;
+}
+
+ .section__box--about p {
+  margin-top: 15px;
+}
+
+.main__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+/* Section Experience */
+
+#experience {
+  margin-top: 5em;
+}
+
+/* Section Projects */
+
+.section__box--projects .section__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1%;
+  padding: 1rem;
+  margin: 10px;
+  width: 320px;
+}
+
+.card__img img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card hr {
+  border: 0.5px solid var(--color-secondary);
+}
+
+.card__title {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* Section: experience and education */
+
+.section__box--experience .section__content, .section__box--education .section__content {
+  display: flex;
+  
+  align-items: center;
+  margin-top: 25px;
+}
+
+.experience--img, .education--img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 15px;
+}
+
+.education--twoimg {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience--img img, .education--img img {
+  width: 80px;
+  border-radius: 5px;
+}
+
+.experience--details, .education--details {
+  font-family: var(--font-secondary);
+}
+
+.experience--title, .education--title {
+  font-size: 16px;
+}
+
+.experience--time, .education--time {
+  font-size: 14px;
+  color:var(--color-primary);
+  margin: 8px 0 8px 0;
+}
+
+/* Media query */
+@media only screen and (max-width: 1000px) {
+  .section__box--projects .section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 60%;
+    margin: auto;
+    margin-top: 110px;
+  }
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  height: 100px;
+}
+
+  .navbar--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 5rem 0;
+}
+
+  .navbar--item {
+    margin-left: 1rem;
+  }
+
+  .navbar--contact {
+    margin-left: 1rem;
+  }
+}
