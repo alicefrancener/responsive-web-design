@@ -2,7 +2,7 @@
 
 Simple product landing page built with plain HTML and CSS.
 
-- [Link to page](https://github.com/alicefrancener/responsive-web-design/product)
+- [Link to page](https://alicefrancener.github.io/responsive-web-design/product/)
 
 ## User Stories
 
