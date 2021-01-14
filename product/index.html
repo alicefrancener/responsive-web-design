@@ -7,6 +7,7 @@
   <title>Memories | Photography</title>
   <link rel="shortcut icon" type="img/png" href="assets/frame-16px.png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/74f926a7ae.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -34,12 +35,55 @@
   </header>
 
   <main>
+    <!-- Main photo -->
     <section class="section section--photo">
       <img src="assets/main.jpg" alt="A empty frame in front of the sea.">
     </section>
-    <section class="section" id="services"></section>
+
+    <!-- Services -->
+    <section id="services" class="section section--services">
+      <div class="grid">
+        <div class="icon">
+          <i class="fas fa-baby fa-3x"></i>
+        </div>
+        <div class="desc">
+          <h3>Baby photos</h3>
+          <p>Eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam magna aliqua purus in mollis nunc
+            sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="icon">
+          <i class="fas fa-birthday-cake fa-3x"></i>
+        </div>
+        <div class="desc">
+          <h3>Birthdays</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore elit ut aliquam purus sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor
+            purus non enim praesent.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="grid">
+        <div class="icon">
+          <i class="fas fa-user-graduate fa-3x"></i>
+        </div>
+        <div class="desc">
+          <h3>Important moments</h3>
+          <p>Morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere
+            accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra diam
+            sit.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Video -->
     <section class="section" id="sample"></section>
-    <section class="section" id="price"></section>
+
+    <!-- Call to action -->
     <section class="section section--cta">
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <label for="email">Would yout like to book a photo shoot?</label>
@@ -47,7 +91,7 @@
           <input id="email" name="email" type="email" placeholder="Your email" required>
           <input id="submit" class="btn" type="submit" value="Book now!">
         </div>
-        
+
       </form>
     </section>
   </main>

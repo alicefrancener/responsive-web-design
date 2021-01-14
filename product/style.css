@@ -22,7 +22,7 @@ h1, h2 {
   font-family: var(--font-primary);
 }
 
-li, p, label, input {
+li, p, label, input, i {
   font-family: var(--font-secondary);
 }
 
@@ -78,6 +78,39 @@ li, p, label, input {
   max-width: 100%;
   height: auto;
 }
+
+/* Section services */
+.section--services {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+
+.section--services .grid {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.section--services .icon {
+  color: var(--color-primary);
+}
+
+.section--services .desc {
+ margin-left: 25px;
+}
+
+.section--services h3 {
+  font-family: var(--font-primary);
+  font-weight: lighter;
+  font-size: 25px;
+  color: var(--color-primary)
+}
+
+
+
 
 /* Call to action */
 
