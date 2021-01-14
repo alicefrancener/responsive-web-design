@@ -22,7 +22,7 @@ h1, h2 {
   font-family: var(--font-primary);
 }
 
-li, p {
+li, p, label, input {
   font-family: var(--font-secondary);
 }
 
@@ -77,4 +77,40 @@ li, p {
 .section--photo img {
   max-width: 100%;
   height: auto;
+}
+
+/* Call to action */
+
+.section--cta {
+  
+  font-size: 30px;
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.section--cta form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.section--cta .btn {
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.section--cta #email {
+  margin-top: 20px;
+  border-radius: 2px;
+  width: 200px;
+  border: none;
+  padding: 10px;
 }
