@@ -87,14 +87,14 @@ li, p, label, input, i {
   margin: auto;
 }
 
-
 .section--services .grid {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 15px 0;
 }
 
 .section--services .icon {
+  margin-top: 10px;
   color: var(--color-primary);
 }
 
@@ -109,13 +109,18 @@ li, p, label, input, i {
   color: var(--color-primary)
 }
 
+/* Video */
 
+.section--video {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
 
 
 /* Call to action */
 
 .section--cta {
-  
   font-size: 30px;
   color: #fff;
   background-color: var(--color-primary);
@@ -146,4 +151,11 @@ li, p, label, input, i {
   width: 200px;
   border: none;
   padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .section--services {
+    width: 80%;
+    margin: auto;
+  }
 }
