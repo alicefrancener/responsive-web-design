@@ -12,29 +12,110 @@
   <nav id="navbar">
     <header>TypeScript</header>
     <ul>
-      <li><a class="nav-link" href=""></a></li>
-      <li><a class="nav-link" href=""></a></li>
-      <li><a class="nav-link" href=""></a></li>
-      <li><a class="nav-link" href=""></a></li>
-      <li><a class="nav-link" href=""></a></li>
+      <li><a class="nav-link" href="#Basic_Types">Basic Types</a></li>
+      <li><a class="nav-link" href="#Interfaces">Interfaces</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+      <li><a class="nav-link" href="#Classes">Classes</a></li>
+      <li><a class="nav-link" href="#Enums">Enums</a></li>
     </ul>
   </nav>
   <main id="main-doc">
-    <section class="main-section">
-      <header></header>
 
+    <section id="Basic_Types" class="main-section">
+      <header>Basic Types</header>
+      <p>In TypeScript, we support the same types as you would expect in JavaScript, with an extra enumeration type thrown in to help things along.</p>
+      <ul>Types:
+        <li>Boolean</li>
+        <li>Number</li>
+        <li>String</li>
+        <li>Array</li>
+        <li>Tuple</li>
+        <li>Enum</li>
+        <li>Unknown</li>
+        <li>Any</li>
+        <li>Void</li>
+        <li>Null and Undefined</li>
+        <li>Never</li>
+        <li>Object</li>
+      </ul>
     </section>
-    <section class="main-section">
-      <header></header>
+
+    <section id="Interfaces" class="main-section">
+      <header>Interfaces</header>
+      <p>One of TypeScript’s core principles is that type checking focuses on the shape that values have. This is sometimes called “duck typing” or “structural subtyping”. In TypeScript, interfaces fill the role of naming these types, and are a powerful way of defining contracts within your code as well as contracts with code outside of your project.</p>
+      <p>The easiest way to see how interfaces work is to start with a simple example:</p>
+      <pre>
+        <code>
+          interface LabeledValue {
+            label: string;
+          }
+          
+          function printLabel(labeledObj: LabeledValue) {
+            console.log(labeledObj.label);
+          }
+          
+          let myObj = { size: 10, label: "Size 10 Object" };
+          printLabel(myObj);
+        </code>
+      </pre>
     </section>
-    <section class="main-section">
-      <header></header>
+
+    <section id="Functions" class="main-section">
+      <header>Functions</header>
+      <p>Functions are the fundamental building block of any application in JavaScript. They’re how you build up layers of abstraction, mimicking classes, information hiding, and modules. In TypeScript, while there are classes, namespaces, and modules, functions still play the key role in describing how to do things. TypeScript also adds some new capabilities to the standard JavaScript functions to make them easier to work with.</p>
+      <p>To begin, just as in JavaScript, TypeScript functions can be created both as a named function or as an anonymous function. This allows you to choose the most appropriate approach for your application, whether you’re building a list of functions in an API or a one-off function to hand off to another function.</p>
+      <p>Example of a function:</p>
+      <pre>
+        <code>
+          function add(x: number, y: number): number {
+            return x + y;
+          }
+          
+          let myAdd = function (x: number, y: number): number {
+            return x + y;
+          };
+        </code>
+      </pre>
     </section>
-    <section class="main-section">
-      <header></header>
+
+    <section id="Classes" class="main-section">
+      <header>Classes</header>
+      <p>Traditional JavaScript uses functions and prototype-based inheritance to build up reusable components, but this may feel a bit awkward to programmers more comfortable with an object-oriented approach, where classes inherit functionality and objects are built from these classes. Starting with ECMAScript 2015, also known as ECMAScript 6, JavaScript programmers can build their applications using this object-oriented class-based approach. In TypeScript, we allow developers to use these techniques now, and compile them down to JavaScript that works across all major browsers and platforms, without having to wait for the next version of JavaScript.</p>
+      <p>Let’s take a look at a simple class-based example:</p>
+      <pre>
+        <code>
+          class Greeter {
+            greeting: string;
+          
+            constructor(message: string) {
+              this.greeting = message;
+            }
+          
+            greet() {
+              return "Hello, " + this.greeting;
+            }
+          }
+          
+          let greeter = new Greeter("world");
+        </code>
+      </pre>
     </section>
-    <section class="main-section">
-      <header></header>
+
+    <section id="Enums" class="main-section">
+      <header>Enums</header>
+      <p>Enums are one of the few features TypeScript has which is not a type-level extension of JavaScript.</p>
+      <p>Enums allow a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.</p>
+      <p>An enum can be defined using the <code>enum</code> keyword.</p>
+      <pre>
+        <code>
+          enum Direction {
+            Up = 1,
+            Down,
+            Left,
+            Right,
+          }
+        </code>
+      </pre>
     </section>
 
   </main>
