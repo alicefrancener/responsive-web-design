@@ -8,20 +8,33 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Navbar */
 
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 20px 80px;
+  width: 300px;
+  border-right: 1px solid;
+  height: 100%;
+  background-color: lightblue;
+}
+
+.navbar header {
+  font-size: 24px;
+  padding: 20px 0 20px 10px;
+  border-bottom: 1px solid;
 }
 
 .navbar li {
   list-style-type: none;
-  padding: 20px 0;
+  padding: 20px 0 20px 10px;
   border-color: black;
-  border-top: solid; 
+  border-bottom: 1px solid; 
 }
 
 .nav-link {
@@ -32,7 +45,7 @@ html {
 /* Main */
 
 .main {
-  width: 80%;
+  position: absolute;
   margin: auto;
-  margin: 20px 200px;
+  margin: 20px 350px;
 }
