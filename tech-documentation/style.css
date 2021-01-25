@@ -46,6 +46,29 @@ body {
 
 .main {
   position: absolute;
-  margin: auto;
-  margin: 20px 350px;
+  margin: 10px 50px 10px 350px;
+}
+
+.main-section header {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.main-section article {
+  padding: 0 20px;
+}
+
+.main-section p {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.main-section ul {
+  margin-left: 50px;
+}
+
+.main-section pre {
+  border-left: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
 }
