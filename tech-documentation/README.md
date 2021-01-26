@@ -1,8 +1,10 @@
 # Technical Documentation Page
+## Overview
 
-Technical documentation page built with plain HTML and CSS.
-
+- Technical documentation page built with plain HTML and CSS.
 - [Link to page](https://alicefrancener.github.io/responsive-web-design/tech-documentation/)
+
+![Tech documentation screen capture](../screen-capture/tech-documentation.png)
 
 ## User Stories
 
