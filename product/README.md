@@ -1,8 +1,11 @@
 # Product Landing Page
 
-Simple product landing page built with plain HTML and CSS.
+## Overview
 
+- Simple product landing page built with plain HTML and CSS.
 - [Link to page](https://alicefrancener.github.io/responsive-web-design/product/)
+
+![Product landing page screen capture](../screen-capture/product.png)
 
 ## User Stories
 

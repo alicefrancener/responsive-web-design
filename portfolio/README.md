@@ -1,7 +1,18 @@
 # Portfolio webpage
 
-FreeCodeCamp Responsive Web Design Project - Build a Personal Portfolio Webpage.  
-- [User stories](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage):
+## Overview
+
+- Portfolio page built with plain HTML and CSS.
+- [Link to page](https://alicefrancener.github.io/responsive-web-design/portfolio/)
+
+- Full screen
+![Portfolio page screen capture](../screen-capture/portfolio-full.png)
+
+- Mobile
+![Porttfolio page screen capture - mobile](../screen-capture/portfolio-mobile.png)
+
+## User Stories
+
   - [x] User Story #1: My portfolio should have a welcome section with an id of welcome-section.
   - [x] User Story #2: The welcome section should have an h1 element that contains text.
   - [x] User Story #3: My portfolio should have a projects section with an id of projects.
@@ -14,4 +25,6 @@ FreeCodeCamp Responsive Web Design Project - Build a Personal Portfolio Webpage.
   - [x] User Story #10: The height of the welcome section should be equal to the height of the viewport.
   - [x] User Story #11: The navbar should always be at the top of the viewport.
 
-Used: HTML5 and CSS3
+---
+
+[Project description](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage) in freeCodeCamp
