@@ -6,7 +6,6 @@ This repository contains webpages built with plain HTML & CSS in order to earn a
 
 ## :hammer: Projects
 
-- [Portfolio](https://alicefrancener.github.io/responsive-web-design/portfolio/)
 - Tribute Page: [CodePen](https://codepen.io/alicefrancener/pen/NWrVZZo)
 - Survey Form: [Project](survey-form/) | [CodePen](https://codepen.io/alicefrancener/pen/bGwjxJW)
 - Product Landing Page: [Project](product/) | [CodePen](https://codepen.io/alicefrancener/pen/NWROxMx)
