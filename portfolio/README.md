@@ -5,11 +5,7 @@
 - Portfolio page built with plain HTML and CSS.
 - [Link to page](https://alicefrancener.github.io/responsive-web-design/portfolio/)
 
-- Full screen
 ![Portfolio page screen capture](../screen-capture/portfolio-full.png)
-
-- Mobile
-![Porttfolio page screen capture - mobile](../screen-capture/portfolio-mobile.png)
 
 ## User Stories
 
